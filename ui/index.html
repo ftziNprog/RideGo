@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RideGo App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main id="app" class="hidden">
+    <header>
+      <h1>RideGo</h1>
+      <button id="closeBtn">Fechar</button>
+    </header>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Motorista</h2>
+        <button data-action="goOnline">Ficar Online</button>
+        <button data-action="goOffline">Ficar Offline</button>
+        <div class="row">
+          <input id="acceptId" type="number" placeholder="ID da corrida" />
+          <button data-action="acceptRide">Aceitar</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Solicitar Corrida</h2>
+        <p>Marque um destino no mapa antes de solicitar.</p>
+        <button data-action="setPassenger">Modo Passageiro</button>
+        <button data-action="requestPlayer">Chamar Corrida (Player)</button>
+        <button data-action="requestNpc">Chamar Corrida (NPC)</button>
+        <button data-action="cancelRide">Cancelar Corrida</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Corridas Disponíveis</h2>
+      <ul id="requestsList"></ul>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

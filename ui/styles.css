@@ -1,0 +1,28 @@
+:root { color-scheme: dark; }
+* { box-sizing: border-box; font-family: Arial, sans-serif; }
+body { margin: 0; background: transparent; }
+.hidden { display: none !important; }
+#app {
+  width: 760px; margin: 40px auto; background: rgba(15, 18, 28, 0.94);
+  border: 1px solid #2e375a; border-radius: 14px; padding: 16px; color: #e6ebff;
+}
+header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+h1 { margin: 0; color: #5cd2ff; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.card { background: rgba(30, 36, 56, 0.85); border-radius: 12px; padding: 12px; margin-bottom: 10px; }
+h2 { margin: 0 0 10px; font-size: 17px; }
+button {
+  width: 100%; margin: 6px 0; border: 0; border-radius: 8px; padding: 10px;
+  background: #377dff; color: white; cursor: pointer; font-weight: 700;
+}
+button:hover { background: #4a8bff; }
+#closeBtn { width: auto; padding: 8px 14px; background: #ff5d7d; }
+.row { display: flex; gap: 8px; }
+.row input {
+  flex: 1; padding: 10px; border-radius: 8px; border: 1px solid #445183;
+  background: #151a2b; color: #fff;
+}
+#requestsList { list-style: none; padding: 0; margin: 0; max-height: 180px; overflow: auto; }
+#requestsList li {
+  padding: 8px; margin: 6px 0; border-radius: 8px; background: #151a2b; border: 1px solid #2d3658;
+}
